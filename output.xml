@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-05-07T08:22:56.090023" rpa="false" schemaversion="5">
+<suite id="s1" name="Youtubetest" source="C:\Users\yusuf\PycharmProjects\PythonProject2\TestCases\youtubetest.robot">
+<test id="s1-t1" name="Play Eminem Lose Yourself on YouTube" line="25">
+<kw name="Bağlantı Kur">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2025-05-07T08:22:56.389926" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x0000024296227CB0&gt;</msg>
+<var>${options}</var>
+<arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
+<arg>sys</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2025-05-07T08:22:56.389682" elapsed="0.000275"/>
+</kw>
+<kw name="Call Method" owner="BuiltIn">
+<arg>${options}</arg>
+<arg>add_experimental_option</arg>
+<arg>debuggerAddress</arg>
+<arg>${DEBUG_ADDRESS}</arg>
+<doc>Calls the named method of the given object with the provided arguments.</doc>
+<status status="PASS" start="2025-05-07T08:22:56.390061" elapsed="0.000112"/>
+</kw>
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-05-07T08:22:56.390375" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2025-05-07T08:22:56.390409" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-05-07T08:22:56.390477" level="FAIL">TypeError: WebDriver.__init__() got an unexpected keyword argument 'chrome_options'</msg>
+<arg>Chrome</arg>
+<arg>chrome_options=${options}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="FAIL" start="2025-05-07T08:22:56.390253" elapsed="0.013554">TypeError: WebDriver.__init__() got an unexpected keyword argument 'chrome_options'</status>
+</kw>
+<status status="FAIL" start="2025-05-07T08:22:56.388988" elapsed="0.014970">TypeError: WebDriver.__init__() got an unexpected keyword argument 'chrome_options'</status>
+</kw>
+<kw name="YouTube Arama Yap">
+<status status="NOT RUN" start="2025-05-07T08:22:56.404297" elapsed="0.000032"/>
+</kw>
+<kw name="İlk Şarkıyı Aç">
+<status status="NOT RUN" start="2025-05-07T08:22:56.404550" elapsed="0.000026"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-05-07T08:22:56.404856" elapsed="0.000025"/>
+</kw>
+<status status="FAIL" start="2025-05-07T08:22:56.388519" elapsed="0.016603">TypeError: WebDriver.__init__() got an unexpected keyword argument 'chrome_options'</status>
+</test>
+<status status="FAIL" start="2025-05-07T08:22:56.090937" elapsed="0.315005"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Youtubetest" id="s1" pass="0" fail="1" skip="0">Youtubetest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
